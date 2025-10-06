@@ -146,7 +146,7 @@ async function sendTicketNotification({ ticketId, name, email, department, urgen
     const info = await resend.emails.send({
       from: `Ticketing System <${FROM_EMAIL}>`,
       to: assignee,
-      subject: `🎫 New Ticket Assigned [${urgency}]`,
+      subject: ` New Ticket Assigned [${urgency}]`,
       html: `
         <p>Hello,</p>
         <p>A new ticket has been assigned to you:</p>
